@@ -14,12 +14,22 @@
     <div class="container">
         <nav>
             <img src="./images/kat-logo.jpg" alt="K">
+            <button class="hamburger"><span></span><span></span><span></span></button>
+            <div class="nav-links">
+              <a href="#header">Home</a>
+              <a href="#about">About</a>
+              <a href="#projects">Projects</a>
+            </div>
+          </nav>
+          
+        <!-- <nav>
+            <img src="./images/kat-logo.jpg" alt="K">
             <div class="nav-links">
                 <a href="#header">Home</a>
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
             </div>
-        </nav>
+        </nav> -->
         <div id="header">
             <div class="left">
                 <h3 class="greeting">Welcome to my portfolio website!</h3>
@@ -134,5 +144,15 @@
     </div>
 
     <script src="https://kit.fontawesome.com/0dc0e0665a.js" crossorigin="anonymous"></script>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        const nav = document.querySelector('nav');
+
+        hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('is-active');
+        nav.classList.toggle('is-active');
+        });
+    </script>
 </body>
 </html>
