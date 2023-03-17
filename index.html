@@ -13,12 +13,13 @@
 <body>
     <div class="container">
         <nav>
-            <img src="./images/kat-logo.jpg" alt="K">
+            <img src="./images/kat-logo.jpg" alt="K" loading="lazy">
             <button class="hamburger"><span></span><span></span><span></span></button>
             <div class="nav-links">
               <a href="#header">Home</a>
               <a href="#about">About</a>
               <a href="#projects">Projects</a>
+              <a href="#contact-me">Contact</a>
             </div>
           </nav>
           
@@ -35,9 +36,9 @@
                 <h3 class="greeting">Welcome to my portfolio website!</h3>
                 <h1 class="name">Katlego Mothibe</h1>
                 <p>I'm a skilled web developer with a passion for building engaging, intuitive websites and applications. With my expertise in Full Stack development and proficiency in programming languages, I create custom solutions that meet the unique needs of each client. Take a look at my work and see how I can help bring your online presence to the next level.</p>
-                <a href="./images/Katlego MOthibe RESUME.pdf">RESUME</a>
+                <a href="./images/Katlego MOthibe RESUME.pdf" target="_blank">RESUME</a>
             </div>
-            <img src="./images/KM.jpeg" alt="Katlego">
+            <img src="./images/KM.jpeg" alt="Katlego" loading="lazy">
         </div><br><br>
        
         <!-- <div class="page-links">
@@ -133,7 +134,46 @@
                 <a href="https://ngh-nails-beauty.netlify.app/"><img src="./images/ngh.jpg" alt="website"></a>
             </div>
 
-            <h5>BACKEND &nbsp; &nbsp;<span style="color: crimson;">COMING SOON!</span> </h5>
+            <h5>BACKEND</h5>
+            <div class="project">
+                <a href="https://kat-mmm.github.io/rwd-landing-page/"><img src="./images/fyyur.jpg" alt="website"></a>
+                <div class="description">
+                    <h4 style="text-align: right; color: #6747c7;">Fyyur</h4>
+                    <div class="project-p">
+                        <p> Fyyur is a musical venue and artist booking site that facilitates the discovery and bookings of 
+                            shows between local performing artists and venues. It let's you list new artists and venues, 
+                            discover them and list shows with artist as a venue owner. CRUD application using MVC design 
+                            pattern
+                        </p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Kat-mmm/cd0046-SQL-and-Data-Modeling-for-the-Web" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://fyyur-booking.onrender.com/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    <h6>SKILLS: HTML, CSS, JavaScript, Bootstrap, Python(Flask), SQLAlchemy ORM, PostgreSQL</h6>
+                </div>
+            </div>
+
+            <div id="contact-me">
+                <h2><span>03.</span> Contact Me</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Message:</label>
+                      <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit">Submit</button>
+                    </div>
+                  </form>                  
+            </div>
         </div>
 
         <footer>

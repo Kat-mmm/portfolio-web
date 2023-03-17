@@ -295,11 +295,65 @@ h5{
     font-size: larger;
 }
 
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+  }
+  
+  .form-group {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    /* font-weight: bold; */
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    font-size: 16px;
+    line-height: 1.5;
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #6747c7;
+    border-radius: 5px;
+    color: #6747c7;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button[type="submit"]:hover {
+    scale: 1.02;
+  }
+
 footer{
     margin-top: 100px;
     width: 100%;
 }
-
+  
 .footer-bottom{
     height: 80px;
     width: 100%;
@@ -358,6 +412,7 @@ footer{
     .project-2{
         margin-top: -50px;
     }
+
 }
 
 @media only screen and (max-width: 983px) {
